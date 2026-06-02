@@ -11,6 +11,11 @@ A modern, highly-responsive, and ATS-friendly Resume Builder application built w
 - **Instant PDF Export**: Download your finished resume directly as a print-ready, high-quality PDF.
 - **Cloud Saving**: Securely save your progress to a MongoDB database and access your resumes from anywhere.
 
+## 🌐 Live Demo
+
+- **Frontend (Live App)**: [https://resume-builder-buwcewqqv-skauumraarv2003s-projects.vercel.app](https://resume-builder-buwcewqqv-skauumraarv2003s-projects.vercel.app)
+- **Backend API**: [https://resume-builder-backend-hmzy.onrender.com](https://resume-builder-backend-hmzy.onrender.com)
+
 ## 🛠️ Technology Stack
 
 - **Frontend**: React.js (Vite), CSS3, Lucide-React for crisp icons
