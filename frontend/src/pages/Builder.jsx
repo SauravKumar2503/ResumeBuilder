@@ -6,6 +6,8 @@ import axios from 'axios';
 import { Save, Download, FileText, Target } from 'lucide-react';
 import { AuthContext } from '../context/AuthContext';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 const Builder = () => {
   const { user } = useContext(AuthContext);
   const [resumeId, setResumeId] = useState(null);
@@ -58,7 +60,7 @@ const Builder = () => {
         const config = {
           headers: { Authorization: `Bearer ${user.token}` }
         };
-        const res = await axios.get('http://localhost:5000/api/resumes', config);
+        const res = await axios.get(`${API_URL}/api/resumes`, config);
         
         if (res.data.length > 0) {
           // Load the first resume for simplicity in this version
@@ -85,11 +87,11 @@ const Builder = () => {
 
       if (resumeId) {
         // Update existing resume
-        await axios.put(`http://localhost:5000/api/resumes/${resumeId}`, resumeData, config);
+        await axios.put(`${API_URL}/api/resumes/${resumeId}`, resumeData, config);
         alert('Resume updated successfully!');
       } else {
         // Create new resume
-        const res = await axios.post('http://localhost:5000/api/resumes', resumeData, config);
+        const res = await axios.post(`${API_URL}/api/resumes`, resumeData, config);
         setResumeId(res.data._id);
         alert('Resume created successfully!');
       }
