@@ -1,0 +1,15 @@
+Mongodb Atlas
+
+username : - sourav2002kumar_db_user
+
+password : - C0lGKIAJRt8oi3re
+
+connection String: - mongodb+srv://sourav2002kumar_db_user:C0lGKIAJRt8oi3re@cluster0.dghwzck.mongodb.net/?appName=Cluster0
+
+Frontend: - npm run dev
+Bacakend: - node server.js
+
+
+
+testuser@gmail.com
+123
